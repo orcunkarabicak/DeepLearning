@@ -4,7 +4,9 @@ from matplotlib import pyplot
 
 def plot_metrics(path, epoch_size, train_metrics, validation_metrics):
     """Plots the metrics."""
+    # EPOCH
     epochs = numpy.arange(1, epoch_size + 1)
+    
     # LOSS
     figure, axes = pyplot.subplots(nrows=1, ncols=1, figsize=(8, 8))
     
@@ -35,7 +37,7 @@ def plot_metrics(path, epoch_size, train_metrics, validation_metrics):
     axes.set_xlabel(r'$\mathrm{Epochs}$')
     axes.set_ylabel(r'$\mathrm{Scores}$')
     
-    axes.set_ylim(0.50, 1.00)
+    axes.set_ylim(0.70, 0.90)
     axes.set_xlim(1, epoch_size + 1)
     figure.savefig(os.path.join(path, 'SCORE.pdf'), bbox_inches='tight')
     
@@ -52,7 +54,7 @@ def plot_metrics(path, epoch_size, train_metrics, validation_metrics):
     axes.set_xlabel(r'$\mathrm{Epochs}$')
     axes.set_ylabel(r'$\mathrm{Recalls}$')
     
-    axes.set_ylim(0.50, 1.00)
+    axes.set_ylim(0.70, 0.90)
     axes.set_xlim(1, epoch_size + 1)
     figure.savefig(os.path.join(path, 'RECALL.pdf'), bbox_inches='tight')
     
@@ -69,7 +71,7 @@ def plot_metrics(path, epoch_size, train_metrics, validation_metrics):
     axes.set_xlabel(r'$\mathrm{Epochs}$')
     axes.set_ylabel(r'$\mathrm{Precisions}$')
     
-    axes.set_ylim(0.50, 1.00)
+    axes.set_ylim(0.70, 0.90)
     axes.set_xlim(1, epoch_size + 1)
     figure.savefig(os.path.join(path, 'PRECISION.pdf'), bbox_inches='tight')
     
@@ -86,6 +88,7 @@ def plot_metrics(path, epoch_size, train_metrics, validation_metrics):
     axes.set_xlabel(r'$\mathrm{Epochs}$')
     axes.set_ylabel(r'$\mathrm{Accuracies}$')
     
-    axes.set_ylim(0.50, 1.00)
+    axes.set_ylim(0.70, 0.90)
     axes.set_xlim(1, epoch_size + 1)
     figure.savefig(os.path.join(path, 'ACCURACY.pdf'), bbox_inches='tight')
+ 
