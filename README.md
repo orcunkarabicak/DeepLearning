@@ -3,7 +3,7 @@ model folde explanation:
 
 CNN_final.ipynb: main notebook to run the model, including hyper parameter settings.
 
-Data.ipynb: download data from gaggle to the remote server (don’t need to submit)
+Data.ipynb: download data from kaggle to the remote server (don’t need to submit)
 
 Dataset.py (preprocessing the data): ImageDataset Class;
 			value function: calculate weights, mean and 				variance;
@@ -16,3 +16,5 @@ Model.py: class CNN: cnn architecture;
 		 predict function: for the test results.
 
 Plot.py: plot_metrics function for plotting loss, accuracy, and other metrics.
+
+Pre-processing and Model Exploration.ipynb: Shows steps taken in the project until the final model.
